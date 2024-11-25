@@ -60,47 +60,6 @@ body > svg {
   animation: 1s 1 ease-in maskAnim forwards;
 }
 
-#circle {
-  animation: 1s 1 ease-in zoomAnim forwards;
-}
-
-#doors, #doors-divided {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 32px;
-}
-
-.door {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-  min-width: 224px;
-  min-height: 224px;
-  cursor: pointer;
-}
-
-.doorImgContainer {
-  width: 68px;
-  height: 120px;
-}
-
-.doorImg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.doorShadowImg {
-  width: 180px;
-  height: 64px;
-  margin-top: -32px;
-  margin-left: -56px;
-}
-
 .logoContainer {
   display: flex;
   justify-content: center;
@@ -113,21 +72,6 @@ body > svg {
   z-index: 1;
 }
 
-.playerCountContainer {
-  display: flex;
-  align-items: center;
-  padding-top: 8px;
-}
-
-.playerCountContainer path {
-  fill: url(#baseGradient);
-  filter: url(#dropShadow);
-}
-
-.playerCountContainer label {
-  padding-left: 8px;
-  pointer-events: none;
-}
 
 #footerIconContainer {
   display: flex;
@@ -143,7 +87,7 @@ body > svg {
   width: 100vw;
   height: 100vh;
   top: 0;
-  background: url(bg.png);
+  background: url(images/bg.png);
   background-size: cover;
   background-position-x: center;
   z-index: -1;
