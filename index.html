@@ -143,151 +143,151 @@
             </a>
 </div>
     </div>
-      <div id="background" class="fade fadeSlow"></div>
-  <template>
-    <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-      <path d="M 9 4 A 1 1 90 0 0 9 9 A 1 1 90 0 0 9 4 M 5 17 C 5 12 6 10 9 10 C 12 10 13 12 13 17 Q 9 19 5 17 M 5 0 A 1 1 90 0 0 5 5 A 1 1 90 0 0 5 0 M 1 13 C 1 8 2 6 5 6 C 5.375 6 5.5 6 6.25 6.125 C 6 7.75 7.5 9.25 8.75 9.25 Q 8.875 9.5 8.875 9.75 C 7.125 9.75 5.25 10.75 5 13.875 Q 2.625 13.875 1 13 M 13 0 A 1 1 90 0 1 13 5 A 1 1 90 0 1 13 0 M 17 13 C 17 8 16 6 13 6 C 12.625 6 12.5 6 11.75 6.125 C 12 7.75 10.5 9.25 9.25 9.25 Q 9.125 9.5 9.125 9.75 C 10.875 9.75 12.75 10.75 13 13.875 Q 15.375 13.875 17 13" />
+    <div id="background" class="fade fadeSlow fadeIn"></div>
+    <template>
+    </template>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+        <defs>
+            <lineargradient id="baseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop stop-color="rgba(217, 179, 228, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(205, 163, 214, 1)" offset="43.75%"></stop>
+                <stop stop-color="rgba(194, 146, 200, 1)" offset="56.25%"></stop>
+                <stop stop-color="rgba(182, 130, 186, 1)" offset="68.75%"></stop>
+                <stop stop-color="rgba(172, 115, 173, 1)" offset="81.25%"></stop>
+                <stop stop-color="rgba(159, 98, 158, 1)" offset="87.5%"></stop>
+                <stop stop-color="rgba(148, 87, 144, 1)" offset="93.75%"></stop>
+                <stop stop-color="rgba(137, 87, 131, 1)" offset="100%"></stop>
+            </lineargradient>
+            <lineargradient id="altGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop stop-color="rgba(123, 82, 134, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(110, 65, 120, 1)" offset="43.75%"></stop>
+                <stop stop-color="rgba(99, 48, 105, 1)" offset="56.25%"></stop>
+                <stop stop-color="rgba(86, 30, 91, 1)" offset="68.75%"></stop>
+                <stop stop-color="rgba(75, 12, 76, 1)" offset="81.25%"></stop>
+                <stop stop-color="rgba(62, 0, 61, 1)" offset="87.5%"></stop>
+                <stop stop-color="rgba(50, 0, 45, 1)" offset="93.75%"></stop>
+                <stop stop-color="rgba(37, 0, 31, 1)" offset="100%"></stop>
+            </lineargradient>
+            <filter id="dropShadow">
+                <fedropshadow dx="1" dy="1" stdDeviation="0.2" flood-color="rgba(0, 0, 0, 1)"></fedropshadow>
+            </filter>
+        </defs>
     </svg>
-  </template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-    <defs>
-      <linearGradient id="baseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop stop-color="rgba(217, 179, 228, 1)" offset="0%"></stop>
-        <stop stop-color="rgba(205, 163, 214, 1)" offset="43.75%"></stop>
-        <stop stop-color="rgba(194, 146, 200, 1)" offset="56.25%"></stop>
-        <stop stop-color="rgba(182, 130, 186, 1)" offset="68.75%"></stop>
-        <stop stop-color="rgba(172, 115, 173, 1)" offset="81.25%"></stop>
-        <stop stop-color="rgba(159, 98, 158, 1)" offset="87.5%"></stop>
-        <stop stop-color="rgba(148, 87, 144, 1)" offset="93.75%"></stop>
-        <stop stop-color="rgba(137, 87, 131, 1)" offset="100%"></stop>
-      </linearGradient>
-      <linearGradient id="altGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop stop-color="rgba(123, 82, 134, 1)" offset="0%"></stop>
-        <stop stop-color="rgba(110, 65, 120, 1)" offset="43.75%"></stop>
-        <stop stop-color="rgba(99, 48, 105, 1)" offset="56.25%"></stop>
-        <stop stop-color="rgba(86, 30, 91, 1)" offset="68.75%"></stop>
-        <stop stop-color="rgba(75, 12, 76, 1)" offset="81.25%"></stop>
-        <stop stop-color="rgba(62, 0, 61, 1)" offset="87.5%"></stop>
-        <stop stop-color="rgba(50, 0, 45, 1)" offset="93.75%"></stop>
-        <stop stop-color="rgba(37, 0, 31, 1)" offset="100%"></stop>
-      </linearGradient>
-      <filter id="dropShadow">
-        <feDropShadow dx="1" dy="1" stdDeviation="0.2" flood-color="rgba(0, 0, 0, 1)"></feDropShadow>
-      </filter>
-    </defs>
-  </svg>
-  <svg id="zoom" xmlns="http://www.w3.org/2000/svg">
-    <rect id="bg" width="100%" height="100%" fill="black" mask="url(#zoomMask)" />
-    <mask id="zoomMask">
-      <rect id="maskBg" width="100%" height="100%" fill="black" />
-      <circle id="circle" fill="black" />
-    </mask>
-  </svg>
-  <script>
-    const gameIds = [
-      'yume',
-      '2kki',
-      'flow',
-      'basics',
-      'doom',
-      'mario',
-      'earthbound',
-      'pou',
-      'gorilla',
-      'hylics',
-      'omori',
-      'oneshot'
-    ];
+    <svg id="zoom" xmlns="http://www.w3.org/2000/svg" style="height: 1813px;">
+        <rect id="bg" width="100%" height="100%" fill="black" mask="url(#zoomMask)"></rect>
+        <mask id="zoomMask">
+            <rect id="maskBg" width="100%" height="100%" fill="black"></rect>
+            <circle id="circle" fill="black"></circle>
+        </mask>
+    </svg>
+    <script type="text/javascript">
+        const gameIds = [
+            '2kki',
+            'basics',
+            'yume',
+            'oneshot',
+            'omori',
+            'earthbound',
+            'doom',
+            'omori',
+            'flow'
+        ];
 
-    const nexus = document.getElementById('nexus');
-    const doorsContainer = document.getElementById('doors');
+        gameIds.push('download');
 
-    setTimeout(() => {
-      document.getElementById('siteLogo').classList.add('fadeIn');
-      document.getElementById('background').classList.add('fadeIn');
-    }, 0);
+        const nexus = document.getElementById('nexus');
+        const doorsContainer = document.getElementById('doors');
+        const uncDoorsContainer = document.getElementById('doors-divided');
 
+        setTimeout(() => {
+            document.getElementById('siteLogo').classList.add('fadeIn');
+            document.getElementById('background').classList.add('fadeIn');
+        }, 0);
 
-    gameIds.forEach((gameId, g) => {
-      const door = document.createElement('div');
-      door.classList.add('fade');
-      door.dataset.gameId = gameId;
-
-      const playerCountContainer = document.createElement('div');
-      playerCountContainer.classList.add('playerCountContainer');
-
-      const logoContainer = document.createElement('div');
-      logoContainer.classList.add('logoContainer');
-
-      const logo = document.createElement('img');
-      logo.classList.add('logo');
-      logo.src = `images/logo_${gameId}.png`;
-
-      logoContainer.append(logo);
-
-      door.append(playerCountContainer);
-      door.append(doorImgContainer);
-      door.append(logoContainer);
-
-
-
-        }
-      };
-    }
-
-
-
-
-    window.onresize = function () { setTimeout(onResize, 0); };
-
-    function onResize() {
-      document.getElementById('zoom').style.height = document.body.offsetHeight;
-    }
-
-    setTimeout(onResize, 0);
-
-    function doDoorAnim(nexus, door) {
-      const zoom = document.getElementById('zoom');
-      const circle = document.getElementById('circle');
-      const initialRadius = Math.max(nexus.offsetWidth, nexus.offsetHeight) * 0.75;
-      const rect = door.getBoundingClientRect();
-      const centerX = ((rect.x + door.offsetWidth / 2) / nexus.offsetWidth) * 100;
-      const centerY = ((rect.y + door.offsetHeight / 2) / nexus.offsetHeight) * 100;
-      circle.setAttribute('r', initialRadius);
-      circle.setAttribute('cx', `${centerX}%`);
-      circle.setAttribute('cy', `${centerY}%`);
-      circle.style.transformOrigin = `calc(${centerX}% + 64px) calc(${centerY}% + 8px)`;
-
-      const cssAnim = document.createElement('style');
-      cssAnim.type = 'text/css';
-      const rules = document.createTextNode(`
-        @keyframes maskAnim {
-          from {
-            fill: black;
-          }
-          to {
-            fill: white;
-          }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js');
         }
 
-        @keyframes zoomAnim {
-          from {
-            r: ${initialRadius};
-            transform: rotate(0deg);
-          }
-          to {
-            r: 128px;
-            transform: rotate(360deg);
-          }
+        gameIds.forEach((gameId, g) => {
+            const door = document.createElement('div');
+            door.classList.add('door');
+            door.classList.add('fade');
+            door.dataset.gameId = gameId;
+
+            const playerCountContainer = document.createElement('div');
+            playerCountContainer.classList.add('playerCountContainer');
+
+            const doorImgContainer = document.createElement('div');
+            doorImgContainer.classList.add('doorImgContainer');
+
+            const doorImg = document.createElement('img');
+            doorImg.classList.add('doorImg');
+            doorImg.src = `images/door_${gameId}.gif`;
+
+            const doorShadowImg = document.createElement('img');
+            doorShadowImg.classList.add('doorShadowImg');
+            doorShadowImg.src = 'images/door_shadow.png';
+
+            doorImgContainer.append(doorImg);
+            doorImgContainer.append(doorShadowImg);
+
+            const logoContainer = document.createElement('div');
+            logoContainer.classList.add('logoContainer');
+
+            const logo = document.createElement('img');
+            logo.classList.add('logo');
+            logo.src = `images/logo_${gameId}.png`;
+
+            logoContainer.append(logo);
+
+            door.append(playerCountContainer);
+            door.append(doorImgContainer);
+            door.append(logoContainer);
+
+            if (gameId !== 'basics') {
+                doorsContainer.append(door);
+            } else {
+                uncDoorsContainer.append(door);
+            }
+            setTimeout(() => door.classList.add('fadeIn'), 75 * g + 750);
+        });
+
+        const doors = document.querySelectorAll('.door');
+
+        for (let door of doors) {
+            const playerCountContainer = door.querySelector('.playerCountContainer');
+            const playerCountLabel = document.createElement('label');
+
+            playerCountLabel.classList.add('unselectable');
+
+
+            if (playerCountContainer) {
+                playerCountContainer.appendChild(document.getElementsByTagName('template')[0].content.cloneNode(true));
+                playerCountContainer.appendChild(playerCountLabel);
+            }
+
+            door.onclick = function () {
+                if (!this.classList.contains('active')) {
+                    door.classList.add('active');
+                    doDoorAnim(nexus, door);
+                }
+            };
         }
-      `);
-      cssAnim.appendChild(rules);
-      document.querySelector('head').appendChild(cssAnim);
-      zoom.classList.add('active');
 
-    
+        setTimeout(() => {
+            const footerIconContainer = document.getElementById('footerIconContainer');
+            footerIconContainer.classList.add('fadeIn');
+            footerIconContainer.classList.remove('nopointer');
+        }, 75 * doors.length + 750);
 
-    }
-  </script> 
+
+                                                        }
+
+
+    </script>
+    <foreignobject></foreignobject>
+    <script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8da4d88d7f67e4b4&quot;,&quot;version&quot;:&quot;2024.10.4&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;589b372c63a442ad876b54ed66b7952a&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
