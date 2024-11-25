@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'PGothic';
+  src: url('fonts/ms-pgothic.woff2') format('woff2'),
+       url('fonts/ms-pgothic.woff') format('woff');
+}
+
+html {
+  font-family: 'MS PGothic', 'PGothic';
+  font-size: 24px;
+  color: rgba(194, 146, 200, 1) !important;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+body > svg {
+  display: block;
+}
+
+#nexus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#siteLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+}
+
+#siteLogo img {
+  height: 130px;
+  margin: auto;
+  padding: 64px 0;
+}
+
+#zoom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#zoom:not(.active) {
+  pointer-events: none;
+}
+
+#maskBg {
+  animation: 1s 1 ease-in maskAnim forwards;
+}
+
+#circle {
+  animation: 1s 1 ease-in zoomAnim forwards;
+}
+
+#doors, #doors-divided {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 32px;
+}
+
+.door {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  min-width: 224px;
+  min-height: 224px;
+  cursor: pointer;
+}
+
+.doorImgContainer {
+  width: 68px;
+  height: 120px;
+}
+
+.doorImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.doorShadowImg {
+  width: 180px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -56px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 60px;
+}
+
+.logo {
+  height: 100%;
+  z-index: 1;
+}
+
+.playerCountContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.playerCountContainer path {
+  fill: url(#baseGradient);
+  filter: url(#dropShadow);
+}
+
+.playerCountContainer label {
+  padding-left: 8px;
+  pointer-events: none;
+}
+
+#footerIconContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  max-width: calc(100vw - 16px);
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+#background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: url(images/bg.png);
+  background-size: cover;
+  background-position-x: center;
+  z-index: -1;
+}
+
+.nopointer {
+  pointer-events: none;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+img {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+label {
+  background-image: linear-gradient(to bottom, rgba(217, 179, 228, 1) 0 43.75%, rgba(205, 163, 214, 1) 43.75% 56.25%, rgba(194, 146, 200, 1) 56.25% 68.75%, rgba(182, 130, 186, 1) 68.75% 81.25%, rgba(172, 115, 173, 1) 81.25% 87.5%, rgba(159, 98, 158, 1) 87.5% 93.75%, rgba(148, 87, 144, 1) 93.75% 100%, rgba(137, 87, 131, 1) 100% 100%) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(1.5px 1.5px rgba(0, 0, 0, 1));
+}
+
+@media (hover: hover) {
+  .iconLink {
+    transition: transform 0.125s cubic-bezier(0.7, 0, 0.7, 1.5);
+  }
+
+  .iconLink:hover {
+    transform: scale(1.25);
+  }
+}
+
+.iconLink {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  appearance: button;
+  -webkit-appearance: button;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.325s ease-in-out;
+}
+
+.fadeUp {
+  padding-top: 128px;
+  transition: opacity 0.325s ease-in-out, padding-top 0.325s ease-in-out;
+}
+
+.fadeSlow {
+  transition-duration: 0.75s;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeIn.fadeUp {
+  padding-top: 0px;
+}
+
+/* Safari only */
+@media not all and (min-resolution:.001dpcm) {
+   /* Don't use text background on Safari since it doesn't repeat properly */
+   label {
+    -webkit-text-fill-color: unset;
+    background-image: none !important;
+  }
+}
