@@ -64,7 +64,7 @@ body > svg {
   animation: 1s 1 ease-in zoomAnim forwards;
 }
 
-#doors, #doors-divided {
+#doors, #doors-divided, #doortwo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
