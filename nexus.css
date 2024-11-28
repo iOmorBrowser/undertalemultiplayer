@@ -94,9 +94,9 @@ body > svg {
   z-index: 1;
 }
 
-.GemImg {
+.ShadowImg {
   width: 180px;
-  height: 180px;
+  height: 64px;
   margin-top: -32px;
   margin-left: -56px;
 }
