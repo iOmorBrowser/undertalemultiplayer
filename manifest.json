@@ -3,12 +3,12 @@
   "name": "Andre's Party!'",
   "icons": [
     {
-      "src": "./gem-192x192.png",
+      "src": "./gem_192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./gem-512x512.png",
+      "src": "./gem_512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
