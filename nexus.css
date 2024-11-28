@@ -94,7 +94,7 @@ body > svg {
   z-index: 1;
 }
 
-.ShadowImg {
+.doorShadowImg {
   width: 180px;
   height: 64px;
   margin-top: -32px;
