@@ -145,7 +145,7 @@ body > svg {
   top: 0;
   background: url(./db8b91fe71c87617747804ce472e72b6.gif) repeat center;
   background-size: cover;
-  background-position-x: center;
+  background-position-x: center center;
   z-index: -1;
 }
 
