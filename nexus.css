@@ -138,15 +138,23 @@ body > svg {
   padding-bottom: 32px;
 }
 
-#background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  background: url(./db8b91fe71c87617747804ce472e72b6.gif) repeat center;
+.decoration {
+  display: inline-block;
+  width: 365px;
+  height: 650px;
+  margin-top: -10px;
+  background: url("/db8b91fe71c87617747804ce472e72b6.gif") no-repeat center;
   background-size: cover;
-  background-position-x: center center;
-  z-index: -1;
+  vertical-align: top;
+  background-position: center center;
+}
+image-holder {
+  width: 269px;
+  height: 477px;
+  margin: 77px 48px;
+  background: url("/db8b91fe71c87617747804ce472e72b6.gif") repeat center;
+  background-position: center center;
+  background-size: cover;
 }
 
 .nopointer {
