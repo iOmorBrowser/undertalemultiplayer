@@ -221,6 +221,5 @@ label {
    /* Don't use text background on Safari since it doesn't repeat properly */
    label {
     -webkit-text-fill-color: unset;
-    background-image: none !important;
   }
 }
